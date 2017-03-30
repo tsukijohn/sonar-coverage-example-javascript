@@ -9,6 +9,24 @@
 npm install screwdriver-notifications-base
 ```
 
+## Interface
+This is a promise based interface for receiving API events and sending notification to users based on their job settings.
+
+### notify
+
+#### Expected Outcome
+
+Notify the the user based on their job settings, e.g. email, slack.
+
+#### Expected Promise response
+
+1. Resolves null when successfully notify the user
+1. Rejects with error if there is any
+
+## Extending
+To extend the base class, the functions to override are:
+1. `_notify`
+
 ## Testing
 
 ```bash
@@ -26,6 +44,6 @@ Code licensed under the BSD 3-Clause license. See LICENSE file for terms.
 [issues-image]: https://img.shields.io/github/issues/screwdriver-cd/notifications-base.svg
 [issues-url]: https://github.com/screwdriver-cd/notifications-base/issues
 [status-image]: https://cd.screwdriver.cd/pipelines/pipelineid/badge
-[status-url]: https://cd.screwdriver.cd/pipelines/pipelineid
+[status-url]: https://cd.screwdriver.cd/pipelines/133
 [daviddm-image]: https://david-dm.org/screwdriver-cd/notifications-base.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/screwdriver-cd/notifications-base
