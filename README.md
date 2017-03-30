@@ -10,7 +10,7 @@ npm install screwdriver-notifications-base
 ```
 
 ## Interface
-This is a promise based interface for receiving API events and sending notification to users based on their job settings.
+This is a promise based interface for receiving Screwdriver API events and sending notification to users based on their job settings.
 
 ### notify
 
