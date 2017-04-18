@@ -1,6 +1,6 @@
 {
   "name": "screwdriver-notifications-base",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Base class for defining the behavior between screwdriver and notifications plugins",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,8 @@
     "chai": "^3.5.0",
     "eslint": "^3.9.1",
     "eslint-config-screwdriver": "^2.0.9",
-    "jenkins-mocha": "^3.0.0"
+    "jenkins-mocha": "^3.0.0",
+    "sinon": "^2.1.0"
   },
   "dependencies": {},
   "release": {
