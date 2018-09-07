@@ -9,22 +9,19 @@ describe('index test', () => {
     let NotificationBase;
 
     beforeEach(() => {
-        if (this.sinon === null) {
-            this.sinon = sinon.sandbox.create();
-        } else {
-            this.sinon.restore();
-        }
-        this.sinon.stub(console, 'error');
+        this.consoleSpy = sinon.spy(console, 'error');
+
         // eslint-disable-next-line global-require
         NotificationBase = require('../index');
         instance = new NotificationBase({});
     });
 
     afterEach(() => {
+        this.consoleSpy.restore();
         instance = null;
     });
 
-    it('can create an notification base class instance', () => {
+    it('can create a notification base class instance', () => {
         assert.instanceOf(instance, NotificationBase);
     });
 
@@ -35,6 +32,6 @@ describe('index test', () => {
     it('should catch an error', () => {
         instance.notify({});
         // eslint-disable-next-line
-        expect(console.error.calledOnce).to.be.true;
+        expect(this.consoleSpy.calledOnce).to.be.true;
     });
 });

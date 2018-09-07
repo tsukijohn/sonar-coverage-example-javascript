@@ -10,13 +10,13 @@ npm install screwdriver-notifications-base
 ```
 
 ## Interface
-This is a interface for receiving Screwdriver API events and sending notification to users based on their job settings.
+This is an interface for receiving Screwdriver API events and sending notification to users based on their job settings.
 
 ### notify
 
 #### Expected Outcome
 
-Notify the user based on their job settings, e.g. email, slack.
+Notify the user based on their job settings, e.g. [email](https://github.com/screwdriver-cd/notifications-email), [slack](https://github.com/screwdriver-cd/notifications-slack).
 
 ## Extending
 To extend the base class, the functions to override are:
