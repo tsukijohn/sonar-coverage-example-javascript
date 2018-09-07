@@ -9,7 +9,7 @@ describe('index test', () => {
     let NotificationBase;
 
     beforeEach(() => {
-        if (this.sinon == null) {
+        if (this.sinon === null) {
             this.sinon = sinon.sandbox.create();
         } else {
             this.sinon.restore();
